@@ -1,5 +1,5 @@
 /*
-* Lorenzo Largent
+* Dev Kapadia
 */
 
 import java.awt.Rectangle;
@@ -10,10 +10,10 @@ public class Homework2 {
                 * It takes in one parameter: a String
                 * Save the string as a private instance variable
                 */
-                private String despacstring1;
+                private String Despacsting1;
 
-                public Homework2(String despacstring2) {
-                                despacstring1 = despacstring2;
+                public Homework2(String Despacsting2) {
+                                Despacsting1 = Despacsting2;
                 }
 
 
@@ -24,9 +24,9 @@ public class Homework2 {
                 * uppercase letters and return the result
                 * Hint: Search the String class for 'uppercase'
                 */
-                public String upperase() {
-                                despacstring1.toUpperCase();
-                                return despacstring1;
+                public String uppercase() {
+                                String Despacsting3 = Despacsting1.toUpperCase();
+                                return Despacsting3;
                 }
 
 
@@ -37,14 +37,16 @@ public class Homework2 {
                 * It should remove spaces, commas, periods, and exclamation points.
                 * Hint: Search the String class for 'replace'
                 */
-                public String strip(String despacstring3) {
-                                despacstring3.replace(" ","");
-                                despacstring3.replace(",","");
-                                despacstring3.replace(".","");
-                                despacstring3.replace("!","");
-                                return despacstring3;
+                public String strip(String string3) {
+                                String Despacsting11 = Despacsting3.replace(" ","");
+                                String Despacsting12 = Despacsting11.replace(",","");
+                                String Despacsting3 = Despacsting12.replace(".","");
+                                String Despacsting14 = Despacsting13.replace("!","");
+                                return Despacsting14;
                 }
-								/* Fix the errors in the method problem4
+
+
+                /* Fix the errors in the method problem4
                 */
                 public Rectangle problems() {
                                 Rectangle r1 = new Rectangle(5, 10, 15, 20);
@@ -68,7 +70,10 @@ public class Homework2 {
 
 
                 }
-
-								
+                public static void main(String[] args) {
+                                Homework2 hw2 = new Homework2("Good Morning, Lorenzo!");
+                                System.out.println(hw2.strip("Good Morning, Lorenzo!"));
+                                System.out.println(hw2.uppercase().equals("GOOD MORNING, LORENZO!"));
+                }
 
 }
