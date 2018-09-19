@@ -38,9 +38,9 @@ public class Homework2 {
                 * Hint: Search the String class for 'replace'
                 */
                 public String strip(String string3) {
-                                String Despacsting11 = Despacsting3.replace(" ","");
+                                String Despacsting11 = string3.replace(" ","");
                                 String Despacsting12 = Despacsting11.replace(",","");
-                                String Despacsting3 = Despacsting12.replace(".","");
+                                String Despacsting13  = Despacsting12.replace(".","");
                                 String Despacsting14 = Despacsting13.replace("!","");
                                 return Despacsting14;
                 }
